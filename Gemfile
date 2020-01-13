@@ -45,6 +45,9 @@ group :development, :test do
   gem 'pry-stack_explorer'
   gem 'kaminari'
   gem 'payjp'
+  gem 'devise'
+  gem 'devise-i18n'
+  gem 'devise-i18n-views'
 end
 
 group :development do
@@ -67,3 +70,4 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
+gem 'bootstrap-sass'
