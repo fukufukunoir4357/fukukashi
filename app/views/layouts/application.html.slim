@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title
+      | Fukukashi
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    header.centerbtn
+      nav
+        - if user_signed_in?
+          strong
+            = link_to current_user.username, pages_show_path
+          |  <link_to 'edit profile', edit_user_registration_path %> <link_to 'logout', destroy_user_session_path, method: :delete %> 
+        - else
+          = link_to 'registration', new_user_registration_path, class: "btn devisebtn"
+          = link_to 'login', new_user_session_path, class: "btn devisebtn"
+    p.notice
+      = notice
+    p.alert
+      = alert
+    = yield

@@ -1,0 +1,22 @@
+body {
+  background-image: url('womanface.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.devisebtn {
+  background-color: #808080;
+  padding: 20px;
+  margin: 15px;
+  color: white;
+}
+
+.centerbtn {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 500px;
+}
